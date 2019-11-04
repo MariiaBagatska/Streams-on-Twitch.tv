@@ -1,0 +1,74 @@
+* {box-sizing: border-box;}
+
+body {
+    font-family: Quicksand, Times New Roman; 
+    font-size: 20px;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto, auto, auto, auto, auto;
+    grid-template-areas:
+        "h h h h"
+        "rb rb rb rb"
+        "on on on on"
+        "of of of of"
+        "f f f f"
+}
+
+.header {
+    grid-area: h;
+    text-align: center;
+    background-color: #8c1aff;
+    color: white;
+    margin: 2px;
+    padding: 5px;
+    border: 1px solid #8c1aff;
+}
+
+#twitch {color: white;}
+
+.buttons {
+    grid-area: rb;
+    margin: 5px auto;
+    max-width: 100%;
+}
+
+#all, #online, #offline {
+    border: 1px solid #8c1aff;
+    margin: 2px;
+    background-color: #8c1aff;
+    color: white;
+}
+
+#content-online {grid-area: on;}
+
+#content-offline {grid-area: of;}
+
+img {
+    max-width: 10%;
+    border:1px solid #8c1aff;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+p {
+    border: 1px solid #8c1aff;
+}
+
+.footer {
+    grid-area: f;
+    text-align: right;
+    background-color: #8c1aff;
+    color: white;
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid #8c1aff;
+    font-style: italic;
+}
+
+
+
+
